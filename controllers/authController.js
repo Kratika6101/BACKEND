@@ -51,7 +51,7 @@ exports.forgotPassword = async (req, res) => {
 
   await user.save();
 
-  const resetLink = `http://localhost:3000/reset/${resetToken}`;
+  const resetLink = `https://project-1-three-omega-20.vercel.app//reset/${resetToken}`;
 
   console.log(`Reset link: ${resetLink}`);
 
